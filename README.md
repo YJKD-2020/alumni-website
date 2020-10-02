@@ -1,4 +1,4 @@
-#alumni-website
+# alumni-website
 
 ## Founders
 Shagundeep Singh, Sanyam Dhawan, Ritesh Goyal, Madhav Pruthi, Pranjali Soni, Deepak Tiwari
