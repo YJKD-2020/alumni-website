@@ -9,10 +9,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>Welcome to Alumni Website</h2>
+        <button>Add Alumni</button>
       </header>
       <br></br>
       <div className="card">
-        <img src="img_avatar.png" alt="logo" />
+        <img src="img_avatar.png" alt="profile pic" />
         <div className="container">
           <h4><b>Shagundeep Singh</b></h4>
           <p>Computer Science - 2020</p>
