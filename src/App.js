@@ -13,7 +13,8 @@ function App() {
       </header>
       <br></br>
       <div className="card">
-        <img src="img_avatar.png" alt="profile pic" />
+        <img src={`https://avatars3.githubusercontent.com/u/25390803?s=400&u=296ed5268e728a4077df9c0e925c1e9b843a7bf8&v=4`} alt="profile pic"
+        style={{height: "200px", width: "200px"}} />
         <div className="container">
           <h4><b>Shagundeep Singh</b></h4>
           <p>Computer Science - 2020</p>
