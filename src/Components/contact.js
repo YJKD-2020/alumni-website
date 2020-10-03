@@ -30,7 +30,8 @@ class Contact extends Component {
                                         <i className="icon-phone"/>
                                     </div>
                                     <div className="colorlib-text">
-                                        <p><a href={"tel:+919888019027"}>+91 9888019027</a></p>
+                                        {/* Use a dummy phone number */}
+                                        <p><a href={"tel:+910000011111"}>+91 910000011111</a></p>
                                     </div>
                                 </div>
                             </div>
