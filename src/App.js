@@ -1,39 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-//import './App.css';
-import "./styles.scss"
+import React from "react"
+import TodoItem from "./TodoItem"
+import todosData from "./todosData"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Welcome to Alumni Website</h2>
-        <button>Add Alumni</button>
-      </header>
-      <br></br>
-      <div className="inline">
-      <div className="card">
-        <img src={`https://avatars3.githubusercontent.com/u/25390803?s=400&u=296ed5268e728a4077df9c0e925c1e9b843a7bf8&v=4`} alt="profile pic"
-        style={{height: "200px", width: "200px"}} />
-        <div className="container">
-          <h4><b>Shagundeep Singh</b></h4>
-          <p>Computer Science - 2020</p>
-          <button>View Details</button>
-        </div>
-      </div>
-      <div className="card">
-        <img src={`https://avatars3.githubusercontent.com/u/25390803?s=400&u=296ed5268e728a4077df9c0e925c1e9b843a7bf8&v=4`} alt="profile pic"
-        style={{height: "200px", width: "200px"}} />
-        <div className="container">
-          <h4><b>Sanyam dhawan</b></h4>
-          <p>Computer Science - 2020</p>
-          <button>View Details</button>
-        </div>
-      </div>
-      </div>
-    </div>
-  );
+class App extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            todos: todosData
+        }
+        this.handleChange = this.handleChange.bind(this)
+    }
+    
+    handleChange(id) {
+        this.setState(prevState => {
+            const updatedTodos = prevState.todos.map(todo => {
+                if (todo.id === id) {
+                    todo.completed = !todo.completed
+                }
+                return todo
+            })
+            return {
+                todos: updatedTodos
+            }
+        })
+    }
+    
+    render() {
+        const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} handleChange={this.handleChange}/>)
+        
+        return (
+            <div className="todo-list">
+                <h1> TO-DO LIST </h1>
+                <h3>Alumni Website</h3>
+                {todoItems}
+            </div>
+        )    
+    }
 }
 
-export default App;
+export default App
