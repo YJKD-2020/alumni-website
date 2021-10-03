@@ -2,13 +2,13 @@
 const todosData = [
     {
         id: 1,
-        text: "Write a blog post on Building a ToDo App using React",
-        completed: false
+        text: "Create Alumni Website",
+        completed: true
     },
     {
         id: 2,
-        text: "Build a ToDo App using React",
-        completed: true
+        text: "Add Alumni Data",
+        completed: false
     }
 ]
 
