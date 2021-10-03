@@ -29,11 +29,17 @@ class App extends React.Component {
         const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} handleChange={this.handleChange}/>)
         
         return (
+          <React.Fragment>
             <div className="todo-list">
                 <h1>Alumni Wesbite</h1>
                 <h3> TO-DO LIST</h3>
                 {todoItems}
             </div>
+            <div className="card">
+              <h3>Shagundeep Singh</h3>
+              <p>Computer Science 2020</p>
+            </div>
+            </React.Fragment>
         )    
     }
 }
