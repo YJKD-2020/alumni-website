@@ -30,8 +30,8 @@ class App extends React.Component {
         
         return (
             <div className="todo-list">
-                <h1> TO-DO LIST </h1>
-                <h3>Alumni Website</h3>
+                <h1>Alumni Wesbite</h1>
+                <h3> TO-DO LIST</h3>
                 {todoItems}
             </div>
         )    
