@@ -39,6 +39,10 @@ class App extends React.Component {
               <h3>Shagundeep Singh</h3>
               <p>Computer Science 2020</p>
             </div>
+            <div className="card">
+              <h3>Sanyam Dhawan</h3>
+              <p>Computer Science 2020</p>
+            </div>
             </React.Fragment>
         )    
     }
