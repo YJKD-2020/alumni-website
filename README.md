@@ -1,12 +1,11 @@
 # alumni-website
 
 ## Founders
-Shagundeep Singh, Sanyam Dhawan, Ritesh Goyal, Madhav Pruthi, Pranjali Soni, Deepak Tiwari
+Shagundeep Singh, Sanyam Dhawan, Ritesh Goyal
 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This project can be built npm as well
 
 ## Available Scripts
 
